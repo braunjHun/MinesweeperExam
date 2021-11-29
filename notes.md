@@ -31,7 +31,7 @@ Mine Sweeper Exam
 	* ✅ pomodoro plan
 	* ✅ Create note.md and add general information 
 	* ✅ add CI and SonarCloud workflow
-	* 🚧 verify github CI workflow succeeded
+	* ✅ verify github CI workflow succeeded
 	* ✅ add SonarCloud secret key to git secret
 	* ✅ re-run sonarCloud workflows	
 	* ✅ add sonar.projectKey= sonarCloud property
@@ -40,7 +40,12 @@ Mine Sweeper Exam
 	* ✅ create UserStory #1 and Scenario(s)
 	* ✅ complete UserStroy #1 Scenario #1
 	* ✅ create UserStory #1 and Scenario(s)
-	* ⚠️ complete UserStroy #1 Scenario #1
+	* 🚧 complete UserStroy #1 Scenario #1
 	* ⚠️ complete UserStroy #1 Scenario #2
 	* ⚠️ complete UserStroy #1 Scenario #3
+
+2. Pomodoro session:
+	* 🚧 complete UserStroy #1 Scenario #1
+	* ⚠️ complete UserStroy #1 Scenario #2
+	* ⚠️ complete UserStroy #1 Scenario #3	
 	

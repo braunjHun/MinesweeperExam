@@ -130,7 +130,7 @@ So that I can start to play the game...
   WHEN drawing the board
   THEN I will see the new empty board
 
-# User Story #2 ⚠️
+# User Story #2 🚧
 As a player I step on a bomb
 I want to see BOOM! – Game Over
 So that I know I did a wrong movement
