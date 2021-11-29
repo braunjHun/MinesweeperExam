@@ -39,14 +39,15 @@ Mine Sweeper Exam
 	* ✅ set Quality Gate to Previous in SonarCloud
 	* ✅ create UserStory #1 and Scenario(s)
 	* ✅ complete UserStroy #1 Scenario #1
-	* ✅ create UserStory #1 and Scenario(s)
-	* 🚧 complete UserStroy #1 Scenario #1
-	* ⚠️ complete UserStroy #1 Scenario #2
-	* ⚠️ complete UserStroy #1 Scenario #3
+	* ✅ create UserStory #2 and Scenario(s)
+	* 🚧 complete UserStroy #2 Scenario #1
+	* ⚠️ complete UserStroy #2 Scenario #2
+	* ⚠️ complete UserStroy #2 Scenario #3
 
 2. Pomodoro session:
-	* ✅ complete UserStroy #1 Scenario #1
-	* ✅ complete UserStroy #1 Scenario #2
-	* ✅ complete UserStroy #1 Scenario #3	
+	* ✅ complete UserStroy #2 Scenario #1
+	* ✅ complete UserStroy #2 Scenario #2
+	* ✅ complete UserStroy #2 Scenario #3	
 	* ✅ refactor test and src
+	* ✅ create UserStory #3 and Scenario(s)
 	
