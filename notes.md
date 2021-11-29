@@ -48,4 +48,5 @@ Mine Sweeper Exam
 	* ✅ complete UserStroy #1 Scenario #1
 	* ✅ complete UserStroy #1 Scenario #2
 	* ✅ complete UserStroy #1 Scenario #3	
+	* ✅ refactor test and src
 	

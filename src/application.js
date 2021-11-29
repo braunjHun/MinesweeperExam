@@ -1,26 +1,51 @@
 class Application {
 
+  BOARD_HORIZONTAL_LINE = "+-+-+-+";
+  BOARD_COLUMN = "|";
+  BOARD_NEW_LINE = "\n";
+  BOARD_MSG_LINE = "";
   BOARD_MAP = [[]];
+  BOARD_SPACE = " ";
+  BOARD_BOOM = "X";
+
+  MSG_CREATE = "[Sandbox 3x3] Game created";
+  MSG_BOOM = "[Sandbox 3x3] BOOM! – Game Over.";
+
   constructor (inputMap) {
       this.BOARD_MAP = inputMap;
+      this.setMessageLine(this.MSG_CREATE);
   }
 
+  setMessageLine(msg){
+    this.BOARD_MSG_LINE = msg;
+
+  }
   drawBoard() {
-     if (this.BOARD_MAP[1][1] == "B") {
-      return "+-+-+-+\n| | | |\n+-+-+-+\n| |X| |\n+-+-+-+\n| | | |\n+-+-+-+\n\n[Sandbox 3x3] BOOM! – Game Over.";
-    }
-    if (this.BOARD_MAP[0][2] == "B") {
-      return "+-+-+-+\n| | |X|\n+-+-+-+\n| | | |\n+-+-+-+\n| | | |\n+-+-+-+\n\n[Sandbox 3x3] BOOM! – Game Over.";
-     }
-     if (this.BOARD_MAP[2][0] == "B") {
-      return "+-+-+-+\n| | | |\n+-+-+-+\n| | | |\n+-+-+-+\n|X| | |\n+-+-+-+\n\n[Sandbox 3x3] BOOM! – Game Over.";
-     }
-
-     return "+-+-+-+\n| | | |\n+-+-+-+\n| | | |\n+-+-+-+\n| | | |\n+-+-+-+\n\n[Sandbox 3x3] Game created";
+    return this.BOARD_HORIZONTAL_LINE + this.BOARD_NEW_LINE +
+    this.BOARD_COLUMN + this.BOARD_MAP[0][0] + 
+    this.BOARD_COLUMN + this.BOARD_MAP[0][1] + 
+    this.BOARD_COLUMN + this.BOARD_MAP[0][2] + 
+    this.BOARD_COLUMN + this.BOARD_NEW_LINE + 
+    this.BOARD_HORIZONTAL_LINE + this.BOARD_NEW_LINE +
+    this.BOARD_COLUMN + this.BOARD_MAP[1][0] + 
+    this.BOARD_COLUMN + this.BOARD_MAP[1][1] + 
+    this.BOARD_COLUMN + this.BOARD_MAP[1][2] + 
+    this.BOARD_COLUMN + this.BOARD_NEW_LINE + 
+    this.BOARD_HORIZONTAL_LINE + this.BOARD_NEW_LINE +
+    this.BOARD_COLUMN + this.BOARD_MAP[2][0] + 
+    this.BOARD_COLUMN + this.BOARD_MAP[2][1] +  
+    this.BOARD_COLUMN + this.BOARD_MAP[2][2] + 
+    this.BOARD_COLUMN + this.BOARD_NEW_LINE + 
+    this.BOARD_HORIZONTAL_LINE + this.BOARD_NEW_LINE +
+    this.BOARD_NEW_LINE + this.BOARD_MSG_LINE;
   }
 
-  takeStep(){
-    
+  setSign(step, sign) {
+    this.BOARD_MAP[step[0]][step[1]] = sign;
+  }
+  takeStep(step) {
+    this.setSign(step, this.BOARD_BOOM);
+    this.setMessageLine(this.MSG_BOOM);
   }
 }
 module.exports = {
