@@ -63,5 +63,7 @@ Mine Sweeper Exam
 	* ✅ complete UserStroy #4 Scenario #3
 	* ✅ refactor
 	* ✅ create UserStory #5 and Scenario(s)
-	* ⚠️ complete UserStroy #5 Scenario #1
+	* 🚧 complete UserStroy #5 Scenario #1
 
+4. Pomodoro session:
+	* 🚧 complete UserStroy #5 Scenario #1

@@ -190,7 +190,7 @@ So that I can think on the next cleaning step
   WHEN drawing the board
   THEN I will see an 1;0 and 1;1 and 0;1 are marked on the board and the message Square flagged as bomb.
 
-# User Story #5 ⚠️
+# User Story #5 🚧
 As a player 
 I want to mark all the bombs expected 
 So that I can win the game
