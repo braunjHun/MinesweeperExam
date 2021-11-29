@@ -200,7 +200,7 @@ So that I can win the game
   WHEN drawing the board
   THEN I will see all the markings on the board and the message the land is cleared! GOOD JOB!
 
-# User Story #6 ⚠️
+# User Story #6 🚧
 As a player 
 I want win automatically if the massive cleaning function clear the board
 So that I can win the game
