@@ -58,15 +58,19 @@ describe('Mine Sweeper', () => {
   describe('As a player I want to mark the bombs expected So that I can think on the next cleaning step', () => {
     const us4Map = [
       [[" ", " ", " "], ["B", " ", " "], [" ", " ", " "]],
+      [[" ", " ", " "], ["B", "B", " "], [" ", " ", " "]],
     ];
     const us4Step = [
+      [2, 0],
       [2, 0],
     ];
     const us4Mark = [
       [[1, 0]],
+      [[1, 0], [1, 1]],
     ];
     const us4Result = [
       ["+-+-+-+\n| | | |\n+-+-+-+\n|*| | |\n+-+-+-+\n|1| | |\n+-+-+-+\n\n[Sandbox 3x3] Square flagged as bomb."],
+      ["+-+-+-+\n| | | |\n+-+-+-+\n|*|*| |\n+-+-+-+\n|2| | |\n+-+-+-+\n\n[Sandbox 3x3] Square flagged as bomb."],
     ];
     for (let i = 0; i < us4Step.length; i++) {
       it(`GIVEN a positon [${us4Mark[i]}] to mark WHEN drawing the board THEN I will see ${us4Result[i]}`, () => {
