@@ -68,4 +68,4 @@ Mine Sweeper Exam
 4. Pomodoro session:
 	* ✅ complete UserStroy #5 Scenario #1
 	* ✅ create UserStory #6 and Scenario(s)
-	* 🚧 complete UserStroy #6 Scenario #1
+	* ✅ complete UserStroy #6 Scenario #1
