@@ -31,9 +31,10 @@ Mine Sweeper Exam
 	* ✅ pomodoro plan
 	* ✅ Create note.md and add general information 
 	* ✅ add CI and SonarCloud workflow
-	* ⚠️ verify github CI workflow succeeded
-	* ⚠️ add SonarCloud secret key to git secret
-	* ⚠️ re-run sonarCloud workflows	
+	* 🚧 verify github CI workflow succeeded
+	* ✅ add SonarCloud secret key to git secret
+	* ✅ re-run sonarCloud workflows	
+	* ✅ add sonar.projectKey= sonarCloud property
 	* ⚠️ verify github workflows are succeeded (re-run)
 	* ⚠️ set Quality Gate to Previous in SonarCloud
 	* ⚠️ create UserStory #1 and Scenario(s)
