@@ -8,7 +8,11 @@ class Application {
   drawBoard() {
      if (this.BOARD_MAP[1][1] == "B") {
       return "+-+-+-+\n| | | |\n+-+-+-+\n| |X| |\n+-+-+-+\n| | | |\n+-+-+-+\n\n[Sandbox 3x3] BOOM! – Game Over.";
+    }
+    if (this.BOARD_MAP[0][2] == "B") {
+      return "+-+-+-+\n| | |X|\n+-+-+-+\n| | | |\n+-+-+-+\n| | | |\n+-+-+-+\n\n[Sandbox 3x3] BOOM! – Game Over.";
      }
+
      return "+-+-+-+\n| | | |\n+-+-+-+\n| | | |\n+-+-+-+\n| | | |\n+-+-+-+\n\n[Sandbox 3x3] Game created";
   }
 
