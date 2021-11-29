@@ -170,7 +170,7 @@ So that I can plan my next step
   WHEN drawing the board
   THEN I will see an 1 in 2;0 on the board and the message 1 bombs around your square.   
 
-# User Story #4 ⚠️
+# User Story #4 ✅
 As a player 
 I want to mark the bombs expected 
 So that I can think on the next cleaning step
