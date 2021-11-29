@@ -200,3 +200,12 @@ So that I can win the game
   WHEN drawing the board
   THEN I will see all the markings on the board and the message the land is cleared! GOOD JOB!
 
+# User Story #6 ⚠️
+As a player 
+I want win automatically if the massive cleaning function clear the board
+So that I can win the game
+
+ ## Scenario #1 
+  GIVEN bomb on [0,2] then click on [0,0]
+  WHEN drawing the board
+  THEN I will see all squares cleared and the message the land is cleared! GOOD JOB!
