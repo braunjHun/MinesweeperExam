@@ -31,4 +31,22 @@ describe('Mine Sweeper', () => {
       });
     }
   });
+  describe('As a player I step on a clean position I want to see the number of bombs around So that I can plan my next step', () => {
+    const us3Map = [
+      [[" ", "B", " "], ["B", " ", "B"], [" ", " ", " "]],
+    ];
+    const us3Step = [
+      [1, 1],
+    ];
+    const us3Result = [
+      ["+-+-+-+\n| | | |\n+-+-+-+\n| |3| |\n+-+-+-+\n| | | |\n+-+-+-+\n\n[Sandbox 3x3] 3 bombs around your square."],
+    ];
+    for (let i = 0; i < us3Step.length; i++) {
+      it(`GIVEN step to position [${us3Step[i]}] WHEN drawing the board THEN I will see [${us3Result[i]}]`, () => {
+        const application = new Application(us3Map[i]);
+        application.takeStep(us3Step[i]);
+        expect(application.drawBoard()).toEqual(us3Result[i].toString());
+      });
+    }
+  });
 });
