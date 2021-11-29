@@ -42,20 +42,11 @@ class Application {
       this.BOARD_HORIZONTAL_LINE + this.BOARD_NEW_LINE +
       this.BOARD_NEW_LINE + this.BOARD_MSG_LINE;
   }
-  markSquare(step) {
-    if (step.length == 2) {
-      this.setSign(step[0], "*");
-      this.setSign(step[1], "*");
-      this.setMessageLine(this.MSG_MARK);
-    } else  if (step.length == 3) {
-      this.setSign(step[0], "*");
-      this.setSign(step[1], "*");
-      this.setSign(step[2], "*");
-      this.setMessageLine(this.MSG_MARK);
-    } else {
-    this.setSign(step[0], "*");
-    this.setMessageLine(this.MSG_MARK);
+  markSquare(marks) {
+    for (let i = 0; i < marks.length; i++) {
+      this.setSign(marks[i], "*");
     }
+    this.setMessageLine(this.MSG_MARK);
   }
 
   setSign(step, sign) {
@@ -79,19 +70,28 @@ class Application {
 
   getBombCount(step) {
     let bombCount = 0;
-    let matrix = [[]];
-
-    if (step[0] == 0 && step[1] == 2) {
-      matrix = [[0,1],[1,1],[1,2]];
-    } 
-    if (step[0] == 1 && step[1] == 1) {
-    matrix = [[0,0],[0,1],[0,2],[1,0],[1,2],[2,0],[2,1],[2,2]];
-    }
-    if (step[0] == 2 && step[1] == 0) {
-    matrix = [[1,0],[1,1],[2,1]];
-    }
-
-
+    
+    let completeMatrix =   [
+      // 0,0
+      [[[0,1],[1,0],[1,1]],
+      // 0,1
+      [[0,0],[0,2],[1,0],[1,1],[1,2]],
+      // 0,2
+      [[0,1],[1,1],[1,2]]],
+      // 1,0
+      [[[0,0],[0,1],[1,1],[2,0],[2,1]],
+      // 1,1
+      [[0,0],[0,1],[0,2],[1,0],[1,2],[2,0],[2,1],[2,2]],
+      // 1,2	
+      [[0,1],[0,2],[1,1],[2,1],[2,2]]],
+      // 2,0
+      [[[1,0],[1,1],[2,1]],
+      // 2,1
+      [[1,0],[1,1],[1,2],[2,0],[2,2]],
+      // 2,2
+      [[1,1],[1,2],[2,1]]]  
+    ];
+    let matrix = completeMatrix[step[0]][step[1]];
     for (let i = 0; i < matrix.length; i++) {
       if (this.BOARD_MAP[matrix[i][0]][matrix[i][1]] === this.BOARD_BOMB) {
         bombCount ++;

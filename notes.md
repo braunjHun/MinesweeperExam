@@ -61,4 +61,5 @@ Mine Sweeper Exam
 	* ✅ complete UserStroy #3 Scenario #1
 	* ✅ complete UserStroy #3 Scenario #2
 	* ✅ complete UserStroy #3 Scenario #3
+	* ✅ refactor
 
