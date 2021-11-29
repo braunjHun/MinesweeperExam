@@ -38,4 +38,5 @@ Mine Sweeper Exam
 	* ✅ verify github workflows are succeeded (re-run)
 	* ✅ set Quality Gate to Previous in SonarCloud
 	* ✅ create UserStory #1 and Scenario(s)
-	* 🚧 complete UserStroy #1 Scenario #1
+	* ✅ complete UserStroy #1 Scenario #1
+	
