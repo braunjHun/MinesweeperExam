@@ -119,16 +119,14 @@ You don't have to mark all the bombs to win; you just need to open all non-bomb 
  
 [Sandbox 3x3] the land is cleared! GOOD JOB! 
 ```` 
+# User Story #1 ⚠️
+As a player I start the game
+I want to see the empty board
+So that I can start to play the game...
 
-# User Story #1 ⚠
-As a ...
-I want to ...
-So that ...
 
-
-## Scenario #1
-  GIVEN ...
-  WHEN ...
-  THEN ...
-
+## Scenario #1 
+  GIVEN nothing
+  WHEN drawing the board
+  THEN I will see the new empty board
 

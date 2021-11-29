@@ -35,7 +35,7 @@ Mine Sweeper Exam
 	* ✅ add SonarCloud secret key to git secret
 	* ✅ re-run sonarCloud workflows	
 	* ✅ add sonar.projectKey= sonarCloud property
-	* ⚠️ verify github workflows are succeeded (re-run)
-	* ⚠️ set Quality Gate to Previous in SonarCloud
-	* ⚠️ create UserStory #1 and Scenario(s)
+	* ✅ verify github workflows are succeeded (re-run)
+	* ✅ set Quality Gate to Previous in SonarCloud
+	* ✅ create UserStory #1 and Scenario(s)
 	* ⚠️ complete UserStroy #1 Scenario #1
