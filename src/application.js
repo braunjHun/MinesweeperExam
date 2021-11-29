@@ -43,8 +43,14 @@ class Application {
       this.BOARD_NEW_LINE + this.BOARD_MSG_LINE;
   }
   markSquare(step) {
+    if (step.length == 2) {
+      this.setSign(step[0], "*");
+      this.setSign(step[1], "*");
+      this.setMessageLine(this.MSG_MARK);
+    } else {
     this.setSign(step[0], "*");
     this.setMessageLine(this.MSG_MARK);
+    }
   }
 
   setSign(step, sign) {
