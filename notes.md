@@ -69,3 +69,4 @@ Mine Sweeper Exam
 	* ✅ complete UserStroy #5 Scenario #1
 	* ✅ create UserStory #6 and Scenario(s)
 	* ✅ complete UserStroy #6 Scenario #1
+	* ✅ refactor src and solve "code smell" reported by SonarCloud
