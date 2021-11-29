@@ -12,6 +12,7 @@ class Application {
   MSG_CREATE = "[Sandbox 3x3] Game created";
   MSG_BOOM = "[Sandbox 3x3] BOOM! – Game Over.";
   MSG_CLEAN = "[Sandbox 3x3] <NUM> bombs around your square.";
+  MSG_MARK = "[Sandbox 3x3] Square flagged as bomb.";
 
   constructor (inputMap) {
       this.BOARD_MAP = inputMap;
@@ -40,6 +41,10 @@ class Application {
       this.BOARD_COLUMN + this.BOARD_NEW_LINE + 
       this.BOARD_HORIZONTAL_LINE + this.BOARD_NEW_LINE +
       this.BOARD_NEW_LINE + this.BOARD_MSG_LINE;
+  }
+  markSquare(step) {
+    this.setSign(step[0], "*");
+    this.setMessageLine(this.MSG_MARK);
   }
 
   setSign(step, sign) {
