@@ -47,5 +47,5 @@ Mine Sweeper Exam
 2. Pomodoro session:
 	* ✅ complete UserStroy #1 Scenario #1
 	* ✅ complete UserStroy #1 Scenario #2
-	* 🚧 complete UserStroy #1 Scenario #3	
+	* ✅ complete UserStroy #1 Scenario #3	
 	
